@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #000;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;
+			font: 400 15px/1.8 Lato, sans-serif;
+		}
+		.navbar
+		{
+			top: 0px;
+			width: 100%;
+			background-color: #333;
+			height: 60px;
+			position: fixed;
+			overflow: hidden;
+			z-index: 500;
+		}
+		.navbar b
+		{
+			padding: 16px 12px;
+			float: right;
+			margin-right: 10px;
+			color: #fff;
+			font-size: 20px; 
+
+		}
+		.navbar b:hover
+		{
+			opacity: 0.7;
+		}
+		.mySlides 
+		{
+			display: none;
+		}
+		img 
+		{
+			margin-top: 55px;
+			vertical-align: middle;
+		}
+	.slideshow-container 
+	{
+			margin-top: 50px;
+			max-width: 60%;
+			height: 70%;
+			position: relative;
+			margin: auto;
+	}
+	.text 
+	{
+			margin-top: 55px;
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+	}
+
+	.numbertext 
+	{
+			margin-top: 55px;
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+	}s
+	.active 
+	{
+			background-color: #717171;
+	}
+	@-webkit-keyframes fade 
+	{
+			from {opacity: .4} 
+			to {opacity: 1}
+	}
+
+	@keyframes fade 
+	{
+			from {opacity: .4} 
+			to {opacity: 1}
+	}
+	@media only screen and (max-width: 300px) 
+	{
+			.text {font-size: 11px}
+	}
+.container 
+{
+  margin-top: 30px;
+  position: relative;
+  width: 30%;
+}
+.image 
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay 
+{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.container:hover .overlay 
+{
+  bottom: 0;
+  height: 100%;
+}
+.text1
+{
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 800 ;
+}
+img
+{
+	 filter: grayscale(40%);
+}
+#tl{
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	height: 120px;
+}
+
+#tl h1{
+	font-size: 150px;
+	color: #333;
+	font-weight: 800;
+	text-shadow: 5px 3px 3px  #fff;
+
+}
+
+#tl h1:before{
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 5px;
+	left: 25%;
+	background-color: white;
+	transition: 3s;
+}
+
+#tl h1:after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 25%;
+	height: 5px;
+	left: 60%;
+	background-color: white;
+	transition: 3s;
+}
+
+#tl h1:hover:after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 30%;
+	height: 5px;
+	left: 26%;
+	transition: 3s;
+	background-color: white;
+}
+
+#tl h1:hover:before{
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 5px;
+	left: 50%;
+	background-color:  white;
+}
+#map
+{
+	background-image: url("map.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 700px;
+	filter: brightness(100%);
+	filter: contrast(120%);
+}
+#i1
+{
+	margin-top: 290px;
+	margin-left: 965px;
+	width: 50px;
+	height: 50px;
+	filter: grayscale(0%);
+	animation-name: jump;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	filter: brightness(120%);
+	filter: contrast(100%);
+}
+@keyframes jump
+{
+	0%{margin-top: 290px;}
+	50%{margin-top: 210px;}
+	100%{margin-top: 290px;}
+}
+	</style>
+</head>
+	<div class="navbar">
+		<b>&nbsp;</b>
+		<b>Contact</b>
+		<b>About Us</b>
+		<b>Songs</b>
+		<b>Home</b>
+	</div>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img src="arijit.jpg" style="width:100%">
+		<div class="text">Arijit</div>
+</div>
+
+<div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="atif.jpg" style="width:100%">
+		<div class="text">Atif</div>
+</div>
+
+<div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="band.jpg" style="width:100%">
+		<div class="text">Band</div>
+</div>
+<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+</div>
+</div>
+<br>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() 
+{
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 2000);
+}
+</script>
+<div style="width: 100%; background-color: #fff; height: 1700px; margin-top: 20px;">
+		<div style="width: 100%; height: 120px;"></div>
+		<div style="width: 100%; height: 200px;"><center><font style="font-size: 90px; color: #333; font-weight: 880;"> CHOOSE YOUR STYLE</font></center></div>
+	<div style="float:left; margin-left: 200px;" class="container">
+  		<img src="back3.jpg" alt="Avatar" class="image">
+  		<div class="overlay">
+    		<div class="text1">HINDI SONGS</div>
+  		</div>
+	</div>
+	<div style="float: right; margin-right: 200px;" class="container">
+  		<img src="back4.jpg" alt="Avatar" class="image">
+  		<div class="overlay">
+    		<div class="text1">ENGLISH SONGS</div>
+  		</div>
+	</div>
+	<div style="width: 100%; height: 50px;"></div>
+	<div style="float:left; margin-left: 200px; margin-top: 50px;" class="container">
+  		<img src="back5.jpg" alt="Avatar" class="image">
+  		<div class="overlay">
+    		<div class="text1">PUNJABI SONGS</div>
+  		</div>
+	</div>
+	<div style="float:right; margin-right: 200px; margin-top: 50px;" class="container">
+  		<img src="back6.jpg" alt="Avatar" class="image">
+  		<div class="overlay">
+    		<div class="text1">RAP SONGS</div>
+  		</div>
+	</div>
+	<div style="width: 100%; height: 160px;"></div>
+</div>
+<div style="width: 100%; background-color: #000; height: 1800px; margin-top: 20px;" id="c2">
+	<div style="width: 100%; height: 120px;"></div>
+	<center><div id="tl">
+	<h1>ARGOLD MUSIC</h1>
+</div></center>
+	<div style="width: 100%; height: 320px;"></div>
+	<center><p>
+		<font style="color: #fff; font-size: 60px;"> We serve what you need we feel what you feel
+			<br>so join us and be a part of the most musical community in this world<br>
+				our music will make you feel flying and it's true we are not lying<br>
+				</font><font style="color: #fff; font-size: 80px; font-weight: 900; font-family: Arvo;" >BE US BE ARGOLD</font>
+	</p><center>
+		<div style="width: 100%; height: 20px;"></div>
+		<img style="border-radius: 100%; width: 700px; height: 500px;" src="eminem.jpg">
+</div>
+<div id="map">
+	<img id="i1" src="pointer.png">
+</div>
+<body>
+</body>
+</html>
